@@ -1,6 +1,7 @@
 const WebSocket = require('ws')
 const events = require('./events')
-
+const keepAlive = require('./server.js');
+keepAlive();
 // WebSocket
 ws_url = 'wss://gateway.discord.gg/?encoding=json&v=8'
 const ws = new WebSocket(ws_url)
